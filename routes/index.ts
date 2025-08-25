@@ -6,6 +6,6 @@ const router = Router();
 
 router.use(globalRouter);
 
-router.use(`/Announcement`, announcementRouter);
+router.use(`/announcement`, announcementRouter);
 
 export default router;
