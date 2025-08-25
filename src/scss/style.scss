@@ -1,0 +1,40 @@
+$primary-color: #6B8CA3;
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    margin: 0;
+    background-color: #ffffff;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+    .img_logo_etudiant {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    li {
+        margin: 0;
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: $primary-color;
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+
+            &:hover {
+                color: #000000;
+                background-color: #9babb6;
+            }
+        }
+    }
+}
