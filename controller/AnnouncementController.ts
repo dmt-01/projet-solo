@@ -1,7 +1,27 @@
 import { Controller } from "../libs/Controller";
 
 export class AnnouncementController extends Controller {
-  public annoucement() {
+  public browseAnnoucement() {
     this.response.render("pages/announcement", {});
+  }
+
+  public readAnnoucement() {
+    this.response.render("pages/allAnnouncement", {});
+  }
+
+  public editAnnoucement() {
+    this.response.render("", {});
+  }
+
+  public createAnnoucement() {
+    this.response.render("", {});
+  }
+
+  public addAnnoucement() {
+    this.response.render("", {});
+  }
+
+  public deleteAnnoucement() {
+    this.response.render("", {});
   }
 }
