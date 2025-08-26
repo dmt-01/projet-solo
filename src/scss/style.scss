@@ -1,15 +1,36 @@
-$primary-color: #6B8CA3;
+$primary-100 : #154D71;
+$primary-65 : #154D71 65% opacité;
+$primary-30 : #154D71 30% opacité;
+
+$secondary-100 : #CFAB8D;
+$secondary-65 : #CFAB8D 65% opacité;
+$secondary-30 : #CFAB8D 30% opacité;
+
+$black : #0F0E0E;
+$white : #FDFDFD;
+$background : #F9F6F3;
+$gray-dark : #4C4C4C;
+$gray-light : #DADAD7;
+
+
+* {
+    margin: 0%;
+}
+
+body {
+    background-color: $background;
+}
 
 .navbar {
     list-style: none;
-    display: flex;
     gap: 1rem;
     padding: 1rem 2rem;
     margin: 0;
-    background-color: #ffffff;
+    background-color: $white;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 
     .img_logo_etudiant {
         width: 50px;
@@ -17,13 +38,14 @@ $primary-color: #6B8CA3;
     }
 
     li {
+        background-color: $white;
         margin: 0;
         display: flex;
 
         a {
             text-decoration: none;
-            color: black;
-            background-color: $primary-color;
+            color: $black;
+            background-color: $primary-100;
             padding: 0.5rem 1rem;
             border-radius: 0.3rem;
             transition: background-color 0.2s ease;
@@ -32,9 +54,61 @@ $primary-color: #6B8CA3;
             margin-left: 10px;
 
             &:hover {
-                color: #000000;
-                background-color: #9babb6;
+                color: $black;
+                background-color: $primary-65;
             }
+        }
+    }
+}
+
+.container_form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin-top: 20px;
+        border: #0F0E0E;
+        gap: 30px;
+
+        input {
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        select {
+            text-align: center;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .form1 {
+            width: 50%;
+            gap: 10px;
+
+            .textarea {
+                resize: none;
+                width: 100%;
+                height: 120px
+            }
+        }
+
+        .form2 {
+            margin-top: 10px;
+            width: 50%;
+            gap: 10px;
+        }
+
+        .form3 {
+            margin-top: 10px;
+            width: 50%;
+            gap: 10px;
         }
     }
 }

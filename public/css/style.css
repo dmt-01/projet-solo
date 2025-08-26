@@ -1,10 +1,19 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+}
+
+body {
+  background-color: #F9F6F3;
+}
+
 .navbar {
   list-style: none;
-  display: flex;
   gap: 1rem;
   padding: 1rem 2rem;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #FDFDFD;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -13,13 +22,14 @@
   margin-right: 10px;
 }
 .navbar li {
+  background-color: #FDFDFD;
   margin: 0;
   display: flex;
 }
 .navbar li a {
   text-decoration: none;
-  color: black;
-  background-color: #6B8CA3;
+  color: #0F0E0E;
+  background-color: #154D71;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   transition: background-color 0.2s ease;
@@ -28,8 +38,53 @@
   margin-left: 10px;
 }
 .navbar li a:hover {
-  color: #000000;
-  background-color: #9babb6;
+  color: #0F0E0E;
+  background-color: #154D71 65% opacité;
+}
+
+.container_form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.container_form .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin-top: 20px;
+  border: #0F0E0E;
+  gap: 30px;
+}
+.container_form .form input {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+}
+.container_form .form select {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+}
+.container_form .form .form1 {
+  width: 50%;
+  gap: 10px;
+}
+.container_form .form .form1 .textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+}
+.container_form .form .form2 {
+  margin-top: 10px;
+  width: 50%;
+  gap: 10px;
+}
+.container_form .form .form3 {
+  margin-top: 10px;
+  width: 50%;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
