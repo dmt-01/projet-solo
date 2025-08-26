@@ -1,4 +1,5 @@
 import { Controller } from "../libs/Controller";
+import data from "../data.json"
 
 export class AnnouncementController extends Controller {
   public browseAnnoucement() {

@@ -1,0 +1,37 @@
+[
+  {
+    "titre": "Développeur Front-End React",
+    "description": "Nous recherchons un développeur front-end expérimenté pour refondre notre interface utilisateur. Projet de 3 mois renouvelable.",
+    "competences": ["React", "JavaScript", "HTML", "CSS", "Git"],
+    "type_mission": "Freelance",
+    "salaire": "400€/jour"
+  },
+  {
+    "titre": "Intégrateur Web HTML/CSS",
+    "description": "Votre mission sera de transformer les maquettes Figma en pages HTML/CSS responsives pour un site e-commerce.",
+    "competences": ["HTML5", "CSS3", "Responsive Design", "Figma"],
+    "type_mission": "CDD - 2 mois",
+    "salaire": "2 300€/mois"
+  },
+  {
+    "titre": "Développeur Full-Stack Node.js",
+    "description": "Start-up en pleine croissance cherche un full-stack pour améliorer son API et développer le front office.",
+    "competences": ["Node.js", "Express", "MongoDB", "Vue.js"],
+    "type_mission": "CDI",
+    "salaire": "45 000€/an"
+  },
+  {
+    "titre": "Chef de projet digital",
+    "description": "Vous serez responsable de la coordination des projets web et de la relation client pour notre agence digitale.",
+    "competences": ["Gestion de projet", "Agilité", "Communication", "WordPress"],
+    "type_mission": "CDI",
+    "salaire": "3 000€/mois"
+  },
+  {
+    "titre": "Développeur Mobile Flutter",
+    "description": "Développement d'une application mobile pour un service de réservation. Projet de 6 mois avec possibilité de CDI.",
+    "competences": ["Flutter", "Dart", "Firebase", "UI/UX"],
+    "type_mission": "Freelance ou CDD",
+    "salaire": "350€/jour"
+  }
+]
