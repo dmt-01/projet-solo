@@ -11,7 +11,7 @@ export class AnnouncementController extends Controller {
   }
 
   public addAnnouncements() {
-    const { titre, description, competences, type_mission, salaire } =
+    const { titre, description, competences, type_mission, salaire, start_date, unite_salaire, password} =
       this.request.body;
     const newAnnoncement = {
       id: Date.now(),
@@ -20,6 +20,9 @@ export class AnnouncementController extends Controller {
       competences: competences.split(","),
       type_mission,
       salaire,
+      start_date,
+      unite_salaire,
+      password
     };
 
     data.push(newAnnoncement)
