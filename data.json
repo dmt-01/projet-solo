@@ -1,5 +1,6 @@
 [
   {
+    "id":1,
     "titre": "Développeur Front-End React",
     "description": "Nous recherchons un développeur front-end expérimenté pour refondre notre interface utilisateur. Projet de 3 mois renouvelable.",
     "competences": ["React", "JavaScript", "HTML", "CSS", "Git"],
@@ -7,6 +8,7 @@
     "salaire": "400€/jour"
   },
   {
+    "id":2,
     "titre": "Intégrateur Web HTML/CSS",
     "description": "Votre mission sera de transformer les maquettes Figma en pages HTML/CSS responsives pour un site e-commerce.",
     "competences": ["HTML5", "CSS3", "Responsive Design", "Figma"],
@@ -14,6 +16,7 @@
     "salaire": "2 300€/mois"
   },
   {
+    "id":3,
     "titre": "Développeur Full-Stack Node.js",
     "description": "Start-up en pleine croissance cherche un full-stack pour améliorer son API et développer le front office.",
     "competences": ["Node.js", "Express", "MongoDB", "Vue.js"],
@@ -21,6 +24,7 @@
     "salaire": "45 000€/an"
   },
   {
+    "id":4,
     "titre": "Chef de projet digital",
     "description": "Vous serez responsable de la coordination des projets web et de la relation client pour notre agence digitale.",
     "competences": ["Gestion de projet", "Agilité", "Communication", "WordPress"],
@@ -28,6 +32,7 @@
     "salaire": "3 000€/mois"
   },
   {
+    "id":5,
     "titre": "Développeur Mobile Flutter",
     "description": "Développement d'une application mobile pour un service de réservation. Projet de 6 mois avec possibilité de CDI.",
     "competences": ["Flutter", "Dart", "Firebase", "UI/UX"],
