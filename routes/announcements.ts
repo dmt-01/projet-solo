@@ -1,36 +1,36 @@
 import { Router } from "express";
-import { AnnouncementController } from "../controller/AnnouncementController";
+import { AnnouncementController } from "../controller/AnnouncementsController";
 
 const announcementRouter = Router();
 
 announcementRouter.get("/", (request, response) => {
   const controller = new AnnouncementController(request, response);
-  controller.browseAnnoucement();
+  controller.browseAnnouncements();
 });
 
 announcementRouter.get("/add", (request, response) => {
   const controller = new AnnouncementController(request, response);
-  controller.readAnnoucement();
+  controller.createAnnouncements();
 });
 
 announcementRouter.post("/", (request, response) => {
   const controller = new AnnouncementController(request, response);
-  controller.editAnnoucement();
+  controller.addAnnouncements();
 });
 
 announcementRouter.get("/:id", (request, response) => {
   const controller = new AnnouncementController(request, response);
-  controller.createAnnoucement();
+  controller.readAnnouncement();
 });
 
 announcementRouter.put("/:id", (request, response) => {
   const controller = new AnnouncementController(request, response);
-  controller.addAnnoucement();
+  controller.editAnnouncement();
 });
 
 announcementRouter.delete("/:id", (request, response) => {
   const controller = new AnnouncementController(request, response);
-  controller.deleteAnnoucement();
+  controller.deleteAnnouncement();
 });
 
 export default announcementRouter;

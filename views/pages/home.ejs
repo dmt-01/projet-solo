@@ -1,5 +1,13 @@
 <%- include("../partials/head", { title: "Accueil" }) %>
 <%- include("../partials/nav") %>
-<%- include("../partials/form") %>
+
+
+
+
+<% announcements.slice(0, 3).forEach((a) => { %>
+  <h2><%= a.titre %></h2>
+  <p><%= a.description %></p>
+  <p><%= a.type_mission %></p>
+<% }) %>
 
 <%- include("../partials/footer") %>
