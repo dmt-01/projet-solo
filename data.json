@@ -1,100 +1,116 @@
 [
   {
     "id": 1,
-    "titre": "Développeur Front-End React",
+    "title": "Développeur Front-End React",
     "description": "Nous recherchons un développeur front-end expérimenté pour refondre notre interface utilisateur. Projet de 3 mois renouvelable.",
-    "competences": [
+    "skills": [
       "React",
       "JavaScript",
       "HTML",
       "CSS",
       "Git"
     ],
-    "type_mission": "Freelance",
+    "mission_type": "Freelance",
     "start_date": "2025-09-15",
-    "salaire": 4000,
-    "unite_salaire": "mois",
+    "salary": 4000,
+    "salary_unit": "mois",
     "password": "frontReact2025"
   },
   {
     "id": 2,
-    "titre": "Intégrateur Web HTML/CSS",
+    "title": "Intégrateur Web HTML/CSS",
     "description": "Votre mission sera de transformer les maquettes Figma en pages HTML/CSS responsives pour un site e-commerce.",
-    "competences": [
+    "skills": [
       "HTML5",
       "CSS3",
       "Responsive Design",
       "Figma"
     ],
-    "type_mission": "CDD - 2 mois",
+    "mission_type": "CDD - 2 mois",
     "start_date": "2025-10-01",
-    "salaire": 2300,
-    "unite_salaire": "mois",
+    "salary": 2300,
+    "salary_unit": "mois",
     "password": "inteWeb@2025"
   },
   {
     "id": 3,
-    "titre": "Développeur Full-Stack Node.js",
+    "title": "Développeur Full-Stack Node.js",
     "description": "Start-up en pleine croissance cherche un full-stack pour améliorer son API et développer le front office.",
-    "competences": [
+    "skills": [
       "Node.js",
       "Express",
       "MongoDB",
       "Vue.js"
     ],
-    "type_mission": "CDI",
+    "mission_type": "CDI",
     "start_date": "2025-09-10",
-    "salaire": 48000,
-    "unite_salaire": "an",
+    "salary": 48000,
+    "salary_unit": "an",
     "password": "stackNode#25"
   },
   {
     "id": 4,
-    "titre": "Chef de projet digital",
+    "title": "Chef de projet digital",
     "description": "Vous serez responsable de la coordination des projets web et de la relation client pour notre agence digitale.",
-    "competences": [
+    "skills": [
       "Gestion de projet",
       "Agilité",
       "Communication",
       "WordPress"
     ],
-    "type_mission": "CDI",
+    "mission_type": "CDI",
     "start_date": "2025-09-20",
-    "salaire": 3000,
-    "unite_salaire": "mois",
+    "salary": 3000,
+    "salary_unit": "mois",
     "password": "chefProjet2025"
   },
   {
     "id": 5,
-    "titre": "Développeur Mobile Flutter",
+    "title": "Développeur Mobile Flutter",
     "description": "Développement d'une application mobile pour un service de réservation. Projet de 6 mois avec possibilité de CDI.",
-    "competences": [
+    "skills": [
       "Flutter",
       "Dart",
       "Firebase",
       "UI/UX"
     ],
-    "type_mission": "Freelance ou CDD",
+    "mission_type": "Freelance ou CDD",
     "start_date": "2025-09-05",
-    "salaire": 350,
-    "unite_salaire": "jour",
+    "salary": 350,
+    "salary_unit": "jour",
     "password": "flutterApp25"
   },
   {
     "id": 6,
-    "titre": "Développeur Back-End Python/Django",
+    "title": "Développeur Full",
+    "description": "Développement d'une application mobile pour un service de réservation. Projet de 6 mois avec possibilité de CDI.",
+    "skills": [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "UI/UX"
+    ],
+    "mission_type": "Freelance ou CDD",
+    "start_date": "2025-09-05",
+    "salary": 350,
+    "salary_unit": "jour",
+    "password": "flutterApp25"
+  },
+  {
+    "id": 6,
+    "title": "Développeur Back-End Python/Django",
     "description": "Nous recherchons un développeur back-end pour créer et maintenir des API sécurisées dans un environnement cloud.",
-    "competences": [
+    "skills": [
       "Python",
       "Django",
       "REST API",
       "PostgreSQL",
       "Docker"
     ],
-    "type_mission": "Freelance - 4 mois",
+    "mission_type": "Freelance - 4 mois",
     "start_date": "2025-09-25",
-    "salaire": 420,
-    "unite_salaire": "jour",
+    "salary": 420,
+    "salary_unit": "jour",
     "password": "djangoBack25"
   }
 ]
