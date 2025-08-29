@@ -7,7 +7,7 @@ export class AnnouncementController extends Controller {
   }
 
   public createAnnouncements() {
-    this.response.render("pages/addAnnouncement", {announcements: data});
+    this.response.render("pages/addAnnouncement", { announcements: data });
   }
 
   public addAnnouncements() {
@@ -46,16 +46,10 @@ export class AnnouncementController extends Controller {
       return this.response.status(404).send("Annonce Introuvable");
     }
 
-    this.response.render("pages/announcements", { announcements:data });
+    this.response.render("pages/announcement", { announcement });
   }
+
   public editAnnouncement() {
-    const id = Number(this.request.params.id);
-    const announcement = data.find((a) => a.id === id);
-
-    if (!announcement) {
-      return this.response.status(404).send("Annonce Introuvable");
-    }
-
     this.response.render("pages/editAnnouncement", { announcement: data });
   }
 
