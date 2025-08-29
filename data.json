@@ -82,22 +82,6 @@
   },
   {
     "id": 6,
-    "title": "Développeur Full",
-    "description": "Développement d'une application mobile pour un service de réservation. Projet de 6 mois avec possibilité de CDI.",
-    "skills": [
-      "Flutter",
-      "Dart",
-      "Firebase",
-      "UI/UX"
-    ],
-    "mission_type": "Freelance ou CDD",
-    "start_date": "2025-09-05",
-    "salary": 350,
-    "salary_unit": "jour",
-    "password": "flutterApp25"
-  },
-  {
-    "id": 6,
     "title": "Développeur Back-End Python/Django",
     "description": "Nous recherchons un développeur back-end pour créer et maintenir des API sécurisées dans un environnement cloud.",
     "skills": [

@@ -1,10 +1,24 @@
 <%- include("../partials/head", { title: "Accueil" }) %>
 <%- include("../partials/nav") %>
 
-<% announcements.forEach((a) => { %>
-  <h2><%= a.title %></h2>
-  <p><%= a.description %></p>
-  <p><%= a.mission_type %></p>
-<% }) %>
+<main class="container">
+  <h1>Toutes les annonces</h1>
+  <div class="cards">
+    <% announcements.forEach((a) => { %>
+      <div class="card">
+        <h2><%= a.title %></h2>
+        <p><%= a.description %></p>
+        <ul>
+          <% a.skills.forEach((c) => { %>
+            <li><%= c %></li>
+          <% }) %>
+        </ul>
+        <p class="mission"><%= a.mission_type %></p>
+        <p class="salaire"><%= a.salary %></p>
+        <a href="/announcements/<%= a.id %>" class="btn">Voir l'annonce</a>
+      </div>
+    <% }) %>
+  </div>
+</main>
 
 <%- include("../partials/footer") %>

@@ -7,7 +7,7 @@ export class AnnouncementController extends Controller {
   }
 
   public createAnnouncements() {
-    this.response.render("pages/addAnnouncement", {});
+    this.response.render("pages/addAnnouncement", {announcements: data});
   }
 
   public addAnnouncements() {
@@ -35,7 +35,7 @@ export class AnnouncementController extends Controller {
 
     data.push(newAnnoncement);
 
-    this.response.redirect("/announcement");
+    this.response.redirect("/announcements");
   }
 
   public readAnnouncement() {
@@ -46,9 +46,8 @@ export class AnnouncementController extends Controller {
       return this.response.status(404).send("Annonce Introuvable");
     }
 
-    this.response.render("pages/announcement", { announcement });
+    this.response.render("pages/announcements", { announcements:data });
   }
-
   public editAnnouncement() {
     const id = Number(this.request.params.id);
     const announcement = data.find((a) => a.id === id);
@@ -57,7 +56,7 @@ export class AnnouncementController extends Controller {
       return this.response.status(404).send("Annonce Introuvable");
     }
 
-    this.response.render("pages/createAnnouncement", { announcement });
+    this.response.render("pages/editAnnouncement", { announcement: data });
   }
 
   public deleteAnnouncement() {
