@@ -46,7 +46,7 @@ export class AnnouncementController extends Controller {
       return this.response.status(404).send("Annonce Introuvable");
     }
 
-    this.response.render("pages/announcement", { announcement });
+    this.response.render("pages/detailAnnouncement", { announcement, announcements: data});
   }
 
   public editAnnouncement() {

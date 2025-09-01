@@ -1,0 +1,29 @@
+<%- include("../partials/head", { title: "Accueil" }) %>
+    <%- include("../partials/nav") %>
+
+        <main>
+            <div class="container_form">
+                <div class="form">
+                    <h1>
+                        <%= announcement.title %>
+                    </h1>
+                    <p>
+                        <%= announcement.description %>
+                    </p>
+                    <p>
+                        <%= announcement.skills %>
+                    </p>
+                    <p class="mission">
+                        <%= announcement.mission_type %>
+                    </p>
+                    <p>
+                        <%= announcement.start_date %>
+                    </p>
+                    <p >
+                        <%= announcement.salary %>€/<%= announcement.salary_unit %>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <%- include("../partials/footer") %>
