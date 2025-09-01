@@ -14,7 +14,7 @@
           <% }) %>
         </ul>
         <p class="mission"><%= a.mission_type %></p>
-        <p class="salaire"><%= a.salary %></p>
+        <p class="salaire"><%= a.salary %>€/<%= a.salary_unit %></p>
         <a href="/announcements/<%= a.id %>" class="btn">Voir l'annonce</a>
       </div>
     <% }) %>
