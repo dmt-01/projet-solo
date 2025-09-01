@@ -3,31 +3,39 @@ import data from "../data.json";
 
 export class AnnouncementController extends Controller {
   public browseAnnouncements() {
-    this.response.render("pages/allAnnouncement", {});
+    this.response.render("pages/announcements", { announcements: data });
   }
 
   public createAnnouncements() {
-    this.response.render("pages/createAnnouncement", {});
+    this.response.render("pages/addAnnouncement", { announcements: data });
   }
 
   public addAnnouncements() {
-    const { titre, description, competences, type_mission, salaire, start_date, unite_salaire, password} =
-      this.request.body;
+    const {
+      title,
+      description,
+      skills,
+      mission_type,
+      start_date,
+      salary,
+      salary_unit,
+      password,
+    } = this.request.body;
     const newAnnoncement = {
       id: Date.now(),
-      titre,
+      title,
       description,
-      competences: competences.split(","),
-      type_mission,
-      salaire,
+      skills: skills.split(","),
+      mission_type,
       start_date,
-      unite_salaire,
-      password
+      salary,
+      salary_unit,
+      password,
     };
 
-    data.push(newAnnoncement)
+    data.push(newAnnoncement);
 
-    this.response.redirect("/announcement");
+    this.response.redirect("/announcements");
   }
 
   public readAnnouncement() {
@@ -35,21 +43,14 @@ export class AnnouncementController extends Controller {
     const announcement = data.find((a) => a.id === id);
 
     if (!announcement) {
-      return this.response.status(404).send("Annonce Introuvable")
+      return this.response.status(404).send("Annonce Introuvable");
     }
 
     this.response.render("pages/announcement", { announcement });
   }
 
   public editAnnouncement() {
-    const id = Number(this.request.params.id);
-    const announcement = data.find((a) => a.id === id);
-
-    if (!announcement) {
-      return this.response.status(404).send("Annonce Introuvable")
-    }
-
-    this.response.render("pages/createAnnouncement", { announcement });
+    this.response.render("pages/editAnnouncement", { announcement: data });
   }
 
   public deleteAnnouncement() {

@@ -1,10 +1,10 @@
 $primary-100 : #154D71;
-$primary-65 : #154D71 65% opacité;
-$primary-30 : #154D71 30% opacité;
+$primary-65 : rgba(21, 77, 113, 0.65);
+$primary-30 : rgba(21, 77, 113, 0.30);
 
 $secondary-100 : #CFAB8D;
-$secondary-65 : #CFAB8D 65% opacité;
-$secondary-30 : #CFAB8D 30% opacité;
+$secondary-65 : rgba(207, 171, 141, 0.65);
+$secondary-30 : rgba(207, 171, 141, 0.30) ;
 
 $black : #0F0E0E;
 $white : #FDFDFD;
@@ -42,7 +42,7 @@ body {
         margin: 0;
         display: flex;
 
-        a {
+        .allLien {
             text-decoration: none;
             color: $black;
             background-color: $primary-100;
@@ -149,4 +149,73 @@ body {
             gap: 10px;
         }
     }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: $white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    color: $black;
+  }
+
+  ul {
+    margin: 0.5rem 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      background: $white;
+      padding: 0.3rem 0.3rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .mission {
+    font-weight: bold;
+    color: $primary-100;
+  }
+
+  .salaire {
+    font-weight: bold;
+    color: $primary-100;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: $primary-100;
+    color: $black;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $primary-65;
+    }
+  }
 }
