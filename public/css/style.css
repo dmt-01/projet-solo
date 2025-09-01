@@ -27,7 +27,7 @@ body {
 }
 .navbar li .allLien {
   text-decoration: none;
-  color: #0F0E0E;
+  color: #FDFDFD;
   background-color: #154D71;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
@@ -172,13 +172,49 @@ body {
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   background: #154D71;
-  color: #0F0E0E;
+  color: #FDFDFD;
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.2s ease;
 }
 .card .btn:hover {
   background: rgba(21, 77, 113, 0.65);
+}
+
+.container_header {
+  width: 100%;
+  height: 350px;
+  background-color: #154D71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.container_header .container_header_description {
+  width: 60%;
+  background-color: rgba(21, 77, 113, 0.3);
+  color: #FDFDFD;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.container_header button {
+  border-radius: 5px;
+  height: 20px;
+  font-size: 1rem;
+  margin-top: 30px;
+  padding: 16px 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.container_header a {
+  color: #0F0E0E;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
