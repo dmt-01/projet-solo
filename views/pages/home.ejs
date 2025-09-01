@@ -1,35 +1,47 @@
 <%- include("../partials/head", { title: "Accueil" }) %>
   <%- include("../partials/nav") %>
 
-
-    <main class="container">
-      <h1>Dernières annonces</h1>
-      <div class="cards">
-        <% announcements.slice(0,3).forEach((a)=> { %>
-          <div class="card">
-            <h2>
-              <%= a.title %>
-            </h2>
-            <p>
-              <%= a.description %>
-            </p>
-            <ul>
-              <% a.skills.forEach((c)=> { %>
-                <li>
-                  <%= c %>
-                </li>
-                <% }) %>
-            </ul>
-            <p class="mission">
-              <%= a.mission_type %>
-            </p>
-            <p class="salaire">
-              <%= a.salary %>€/<%= a.salary_unit %>
-            </p>
-            <a href="/announcements/<%= a.id %>" class="btn">Voir l'annonce</a>
+    <main>
+      <header>
+        <div class="container_header">
+          <div class="container_header_description">
+            <h1>Trouver la mission qui vous correspond.</h1>
+            <p>Découvrez des annonces claires, accessibles et adaptées à vos talents.
+              Publiez, éditez ou supprimez vos offres en toute simplicité.</p>
+            <button><a href="/announcements">Découvrez les offres</a></button>
           </div>
-          <% }) %>
+        </div>
+      </header>
+      <div class="container">
+        <h1>Dernières annonces</h1>
+        <div class="cards">
+          <% announcements.slice(0,3).forEach((a)=> { %>
+            <div class="card">
+              <h2>
+                <%= a.title %>
+              </h2>
+              <p>
+                <%= a.description %>
+              </p>
+              <ul>
+                <% a.skills.forEach((c)=> { %>
+                  <li>
+                    <%= c %>
+                  </li>
+                  <% }) %>
+              </ul>
+              <p class="mission">
+                <%= a.mission_type %>
+              </p>
+              <p class="salaire">
+                <%= a.salary %>€/<%= a.salary_unit %>
+              </p>
+              <a href="/announcements/<%= a.id %>" class="btn">Voir l'annonce</a>
+            </div>
+            <% }) %>
+        </div>
       </div>
-    </main>
+    </main>h
+
 
     <%- include("../partials/footer") %>
